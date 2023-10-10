@@ -26,6 +26,7 @@ const PartnerSection = ({
             alt=""
             fill={true}
             className="object-cover"
+            sizes="100vw"
           />
         </div>
         <div className="z-10 mx-auto grid w-full max-w-screen-lg grid-cols-1 py-28 max-lg:px-0 sm:grid-cols-2">
@@ -39,7 +40,13 @@ const PartnerSection = ({
               { title: email, icon: EmailIcon },
             ].map(({ title, icon }) => (
               <div key={`footer-${title}`} className="flex flex-row">
-                <Image src={icon} alt={title} width={24} height={24} />
+                <Image
+                  src={icon}
+                  alt={title}
+                  width={24}
+                  height={24}
+                  className="h-6 w-6"
+                />
                 <p className="subtitle1 ml-6 text-white">{title}</p>
               </div>
             ))}

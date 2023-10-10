@@ -28,6 +28,7 @@ const AboutUsSection = ({
                     alt=""
                     fill={true}
                     className="bg-gradient-to-t from-black/60 to-black/60 object-cover"
+                    sizes="(max-width: 1536px) 30vw, 438px"
                   />
                 </div>
                 <div className="absolute left-0 top-0 -z-10 h-full w-full bg-gradient-to-t from-black/60 to-black/60"></div>

@@ -33,6 +33,7 @@ const FaqSection = ({
               alt=""
               fill={true}
               className="object-cover"
+              sizes="(max-width: 1536px) 100vw, 1500px"
             />
           </div>
           <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-t from-black/70 to-black/70"></div>

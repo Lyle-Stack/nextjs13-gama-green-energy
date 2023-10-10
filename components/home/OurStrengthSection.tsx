@@ -34,6 +34,7 @@ const OurStrengthSection = ({ title, cards }: OurStrengthSectionProps) => {
                   alt={imgPath}
                   fill={true}
                   className="object-cover"
+                  sizes="(max-width: 600px) 100vw, 30vw"
                 />
               </div>
               <div className="px-6 pb-8 pt-6 sm:pb-12">

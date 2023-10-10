@@ -18,6 +18,7 @@ const PartnerSection = ({ title, titleDes }: PartnerSectionProps) => {
               alt=""
               fill={true}
               className="object-cover"
+              sizes="(max-width: 1536px) 50vw, 676px"
             />
           </div>
         </div>

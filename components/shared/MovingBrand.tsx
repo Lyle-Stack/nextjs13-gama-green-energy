@@ -81,12 +81,18 @@ const MovingBrand = () => {
             <TooltipTrigger
               className={`relative h-[120px] max-w-full ${twAspectClass}`}
             >
-              <a href={link} target="_blank" rel="noreferrer">
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="relative block h-full w-full"
+              >
                 <Image
                   src={imgPath}
                   alt={alt}
                   fill={true}
                   className="object-contain"
+                  sizes="480px"
                 />
               </a>
             </TooltipTrigger>

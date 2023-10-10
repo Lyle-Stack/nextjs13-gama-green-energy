@@ -35,6 +35,7 @@ const PracticalCaseSection = ({
               alt=""
               fill={true}
               className="object-cover"
+              sizes="(max-width: 1536px) 100vw, 1500px"
             />
           </div>
           <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-t from-black/70 to-black/70"></div>
@@ -61,6 +62,7 @@ const PracticalCaseSection = ({
               alt="佳瑪外觀3D圖"
               fill={true}
               className="object-contain"
+              sizes="(max-width: 600px) 100vw, (max-width: 1536px) 50vw, 600px"
             />
           </div>
           <div className="relative w-full sm:ml-auto sm:w-1/2">
@@ -87,6 +89,7 @@ const PracticalCaseSection = ({
               alt={picGridSubtitle[0]}
               fill={true}
               className="object-cover"
+              sizes="(max-width: 768px) 50vw, (max-width: 1536px) 30vw, 464px"
             />
             <PicHoverEffect title={picGridSubtitle[0]} />
           </div>
@@ -96,6 +99,7 @@ const PracticalCaseSection = ({
               alt={picGridSubtitle[4]}
               fill={true}
               className="object-contain"
+              sizes="(max-width: 768px) 50vw, (max-width: 1536px) 30vw, 464px"
             />
             <PicHoverEffect title={picGridSubtitle[4]} />
           </div>
@@ -105,6 +109,7 @@ const PracticalCaseSection = ({
               alt={picGridSubtitle[1]}
               fill={true}
               className="object-contain"
+              sizes="(max-width: 768px) 50vw, (max-width: 1536px) 30vw, 464px"
             />
             <PicHoverEffect title={picGridSubtitle[1]} />
           </div>
@@ -114,6 +119,7 @@ const PracticalCaseSection = ({
               alt={picGridSubtitle[2]}
               fill={true}
               className="object-contain"
+              sizes="(max-width: 768px) 50vw, (max-width: 1536px) 30vw, 464px"
             />
             <PicHoverEffect title={picGridSubtitle[2]} />
           </div>
@@ -123,6 +129,7 @@ const PracticalCaseSection = ({
               alt={picGridSubtitle[3]}
               fill={true}
               className="object-contain"
+              sizes="(max-width: 768px) 50vw, (max-width: 1536px) 30vw, 464px"
             />
             <PicHoverEffect title={picGridSubtitle[3]} />
           </div>

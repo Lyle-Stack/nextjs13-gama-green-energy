@@ -19,6 +19,7 @@ const HeroSection = ({ title, subtitle }: HeroSectionProps) => {
           alt=""
           fill={true}
           className="object-cover"
+          sizes="100vw"
         />
       </div>
     </section>

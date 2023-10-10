@@ -28,6 +28,7 @@ const SolutionSection = ({
               alt=""
               fill={true}
               className="object-cover"
+              sizes="(max-width: 1536px) 100vw, 1500px"
             />
           </div>
           <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-t from-black/70 to-black/70"></div>
@@ -37,6 +38,7 @@ const SolutionSection = ({
               alt=""
               fill={true}
               className="object-cover"
+              sizes="(max-width: 1536px) 50vw, 600px"
             />
           </div>
           <div className="z-0 col-span-10 col-start-2 mx-auto flex flex-col items-center justify-center sm:col-span-4 sm:col-start-8 sm:items-start">
@@ -100,6 +102,7 @@ const SolutionSection = ({
               alt="去中心化"
               fill={true}
               className="object-contain"
+              sizes="(max-width: 600px) 100vw, (max-width: 1536px) 50vw, 720px"
             />
           </div>
           <div className="section-p relative w-full py-8 sm:w-1/2 sm:py-12 md:py-16 lg:py-20">
@@ -119,6 +122,7 @@ const SolutionSection = ({
               alt="Aurelia A400"
               fill={true}
               className="object-contain"
+              sizes="(max-width: 600px) 100vw, (max-width: 1536px) 50vw, 600px"
             />
           </div>
           <div className="relative w-full sm:w-1/2">
