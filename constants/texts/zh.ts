@@ -1,8 +1,8 @@
 import HomeProps from "@/types";
 
-const context: HomeProps = {
-    NavgationBar: {
-        lang: 'zh',
+const zhContext: HomeProps = {
+    navbar: {
+        lang: '中文',
         pages: [{
             name: '關於我們',
             pathName: '#aboutUs'
@@ -23,11 +23,11 @@ const context: HomeProps = {
             pathName: '#contactUs'
         }]
     },
-    HeroSection: {
+    heroSection: {
         title: '佳瑪環能科技',
         subtitle: '化腐朽為能源-廢棄物轉生物質能的循環經濟再利用'
     },
-    AboutUsSection: {
+    aboutUsSection: {
         imagePart: [{
             title: '再生能源',
             description: '原材料可以再被利用生成能源，特性為用之不竭，不受能源短缺的影響，可促使未來家園與環境永續共生。'
@@ -47,7 +47,7 @@ const context: HomeProps = {
             contentSecondPara: '佳瑪環能的核心目標，係將廢棄物資材轉換成能源，舉凡一般生活、工業、及農業等生質廢棄物，都是我們關注的可用資源。此外佳瑪環能相當注重生質廢棄物能源化過程中所產生的污染是否符合環保規範。'
         }
     },
-    SolutionSection: {
+    solutionSection: {
         title: '解決方案',
         titleDes: '首創微型高溫氣化熱裂解技術可有效解決垃圾焚化及能源不足等問題',
         subtitleFirst: '佳瑪環能的氣化技術具有下列的優點',
@@ -73,7 +73,7 @@ const context: HomeProps = {
             '這是一款新型的400 kW微型燃氣渦輪發電機，具40.2%的能量轉換效率，比市面上的其他微渦輪機效率高出約20%，是目前最高效率的微渦輪機。能夠使用包括氫氣在內的多種可再生燃料和非標準燃料，運轉時污染極低、廢熱可充分再利用及體積小運轉維修容易。為小型燃氣渦輪機及柴油發電機組外，為最具發展潛力之緊急電源及小型分散型電源。'
         ]
     },
-    CostEffectivenessSection: {
+    costEffectivenessSection: {
         title: '成本效益',
         titleDes: 'GAMA 佳瑪環能第一期將建置 400kW之發電設備一年最大發電量約為320萬度，依能源局最公布之109年度電力排碳係數0.502公斤CO2e換算，一年約可減少1,600公噸CO2排放，約為160公頃造林效益(6.25座大安森林公園)。此外GAMA佳瑪環能發電是採用回收生質廢棄物中的能量，第一期估算可以協助處理約2,000公噸/年的廢棄物，並由收取廢棄物處理費及躉售台電獲得收益。',
         stage: ['第一期', '第二期'],
@@ -84,7 +84,7 @@ const context: HomeProps = {
             '廢棄物量體'
         ]
     },
-    PracticalCaseSection: {
+    practicalCaseSection: {
         title: '案例實績',
         subtitleFirst: '實證示範廠',
         contentFirst: '曾於花蓮壽豐鄉有機農場設立實驗基地解決農業廢棄物去化問題。原料透過適當分離、乾燥等前處理程序後，進行氣化產熱、產電等轉換，此實驗證明對農業廢棄物能做適當能資源轉換及去化處理。',
@@ -103,7 +103,7 @@ const context: HomeProps = {
             '運轉測試'
         ]
     },
-    OurStrengthSection: {
+    ourStrengthSection: {
         title: '我們的優勢',
         cards: [{
             title: '再生能源發電設備',
@@ -116,7 +116,7 @@ const context: HomeProps = {
             titleDes: '行政院環境保護署「電力設施空氣污染物排放標準」之氣渦輪機組定義 可符合空氣污染管制要求，包括：粒狀污染物(10mg/Nm^3)、硫氧化物(8ppm)、氮氧化物(10ppm)'
         }]
     },
-    FaqSection: {
+    faqSection: {
         title: '相關問答',
         subtitleFuel: '燃料',
         qaFuel: [{
@@ -157,11 +157,11 @@ const context: HomeProps = {
             a: '高溫氣化的副產物主要為木醋液及炭黑。木醋液在農業上具有殺菌、治蟲、抗病、提高水和土壤有益微生物活性、促進作物生長等作用。炭黑已廣泛應用在塑料、油墨塗料、導電及橡膠工業。'
         }]
     },
-    PartnerSection: {
+    partnerSection: {
         title: '合作夥伴',
         titleDes: '佳瑪環能整合產業上下游設備商，進行系統性結盟，發展國際團隊，協助各國維護環境及產業朝向永續的方向前進。因應未來趨勢與潮流，將導入 ERP、虛擬主機及雲端管理系統，整合各分散式微型能資源轉換中心即時的運轉數據及資料庫，進行智能化營運管理及產業大數據整合運用，以利系統效能優化及國際市場開拓領先優勢。'
     },
-    FooterSection: {
+    footer: {
         title: '聯繫我們',
         office: '桃園市大園區大觀路256號1樓',
         phone: '+886-3-381-9840',
@@ -172,4 +172,4 @@ const context: HomeProps = {
     }
 };
 
-export default context;
+export default zhContext;

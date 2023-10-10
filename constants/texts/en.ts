@@ -1,8 +1,8 @@
 import HomeProps from "@/types";
 
-const context: HomeProps = {
-    NavgationBar: {
-        lang: 'en',
+const enContext: HomeProps = {
+    navbar: {
+        lang: 'En',
         pages: [{
             name: "About Us",
             pathName: "#aboutUs"
@@ -23,11 +23,11 @@ const context: HomeProps = {
             pathName: "#contactUs"
         }]
     },
-    HeroSection: {
+    heroSection: {
         title: "GAMA Green-Energy Technology",
         subtitle: "Waste to Energy. We are working on Circular economy reuse of waste to biomass energy."
     },
-    AboutUsSection: {
+    aboutUsSection: {
         imagePart: [{
             title: "Renewable energy",
             description: "Raw materials can be reused to generate energy, which is inexhaustible and not affected by energy shortages. It can promote the sustainable coexistence with a friendly environment."
@@ -47,7 +47,7 @@ const context: HomeProps = {
             contentSecondPara: "The core goal of GAMA is to convert waste materials into energy. Biomass wastes such as general life, industry, and agriculture are all available resources that we are concerned about. In addition, GAMA pays great attention to whether the pollution generated in the process of biomass waste energy conversion meets environmental protection standards."
         }
     },
-    SolutionSection: {
+    solutionSection: {
         title: "Total Solution",
         titleDes: "Our micro-high temperature gasification thermal technology can effectively solve the problems of incineration and energy shortage.",
         subtitleFirst: "GAMA's gasification technology has the following advantages:",
@@ -73,7 +73,7 @@ const context: HomeProps = {
             "This is a new 400 kW micro-turbine with 40.2% energy conversion efficiency, which is about 20% higher than other micro-turbines on the market. It is the most efficient micro-turbine and can use natural gas, biogas and hydrogen various renewable and non-standard fuels.During operation, the pollution is extremely low, the waste heat can be fully reused, and the small size is easy to operate and maintain.In addition to small turbines and diesel generator sets, it is the most potential emergency power supply and small distributed generator sets."
         ]
     },
-    CostEffectivenessSection: {
+    costEffectivenessSection: {
         title: "Cost-effectiveness",
         titleDes: "The first phase of GAMA will build a 400kW power generation equipment with a maximum annual power generation capacity of about 3.2 million kWh. equal to the 109 annual electricity carbon emission coefficients by 0.502 kg CO2e published by the Energy Bureau, about 1,600 metric tons of CO2 emissions can be reduced in one year, which is about 160 hectares of afforestation benefits (6.25 sets of Daan Forest Parks). In addition, GAMA Power Generation uses the energy recovered from biomass waste. It is estimated that the first phase can assist in the treatment of about 2,000 metric tons of waste per year, and the revenue will be obtained by collecting waste treatment fees and sales power to utility company (Taipower).",
         stage: ["Stage 1", "Stage 2"],
@@ -84,7 +84,7 @@ const context: HomeProps = {
             "Annual Waste Treatment"
         ]
     },
-    PracticalCaseSection: {
+    practicalCaseSection: {
         title: "Case Study",
         subtitleFirst: "Demonstration plant",
         contentFirst: "GAMA once set up an experimental base at the organic farm in Shoufeng Township, Hualien to solve the problem of agricultural waste removal. After the raw materials pass through appropriate pretreatment procedures such as separation and drying, they are converted into heat generation and electricity generation through gasification. This experiment proves that agricultural waste can be properly converted into energy resources and detoxified.",
@@ -103,7 +103,7 @@ const context: HomeProps = {
             "Runing testing"
         ]
     },
-    OurStrengthSection: {
+    ourStrengthSection: {
         title: "Our advantage",
         cards: [{
             title: "Renewable energy power generation equipment",
@@ -116,7 +116,7 @@ const context: HomeProps = {
             titleDes: "Environmental Protection Administration Executive Yuan 「Air Pollutant Emission Standards for Electric Power Facilities」The definition of micro-turbine can meet the air pollution control requirements, including: particulate pollutants (10mg/Nm^3), sulfur oxides (8ppm), nitrogen oxides (10ppm)."
         }]
     },
-    FaqSection: {
+    faqSection: {
         title: "Q&A",
         subtitleFuel: "Fuel",
         qaFuel: [{
@@ -157,11 +157,11 @@ const context: HomeProps = {
             a: "The by-products of high temperature gasification are mainly wood vinegar and carbon black.In agriculture, wood vinegar has the functions of sterilization, insect control, disease resistance, improving the activity of beneficial microorganisms in water and soil, and promoting crop growth. Carbon black has been widely used in plastics, ink coatings, electrical conductivity and rubber industries."
         }]
     },
-    PartnerSection: {
+    partnerSection: {
         title: "Channel Partners",
         titleDes: "GAMA integrates the upstream and downstream equipment manufacturers of the industry, conducts systematic alliances, develops international teams, and assists countries in maintaining the environment and advancing the industry in a sustainable direction. In response to future trends and trends, ERP, virtual host and cloud management systems will be introduced to integrate the real-time operation data and databases of various distributed micro-energy resource conversion centers for intelligent operation management and industrial big data integration and application. In order to facilitate system performance optimization and international market development leading edge."
     },
-    FooterSection: {
+    footer: {
         title: "Contact Us",
         office: "No. 256, Daguan Rd, Dayuan District, Taoyuan City, 337, Taiwan, R.O.C.",
         phone: "+886-3-381-9840",
@@ -172,4 +172,4 @@ const context: HomeProps = {
     }
 };
 
-export default context;
+export default enContext;

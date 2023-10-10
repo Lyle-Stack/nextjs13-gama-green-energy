@@ -1,17 +1,17 @@
-export interface INavgationBar {
-    lang: 'zh' | 'en';
+export interface NavbarProps {
+    lang: '中文' | 'En';
     pages: {
         name: string;
         pathName: string;
     }[]
 }
 
-export interface IHeroSection {
+export interface HeroSectionProps {
     title: string;
     subtitle: string;
 }
 
-export interface IAboutUsSection {
+export interface AboutUsSectionProps {
     imagePart: {
         title: string;
         description: string;
@@ -26,7 +26,7 @@ export interface IAboutUsSection {
     };
 }
 
-export interface ISolutionSection {
+export interface SolutionSectionProps {
     title: string;
     titleDes: string;
     subtitleFirst: string;
@@ -37,14 +37,14 @@ export interface ISolutionSection {
     contentThird: string[];
 }
 
-export interface ICostEffectivenessSection {
+export interface CostEffectivenessSectionProps {
     title: string;
     titleDes: string;
     stage: string[];
     listDescription: string[];
 }
 
-export interface IPracticalCaseSection {
+export interface PracticalCaseSectionProps {
     title: string;
     subtitleFirst: string;
     contentFirst: string;
@@ -55,7 +55,7 @@ export interface IPracticalCaseSection {
     picGridSubtitle: string[];
 }
 
-export interface IOurStrengthSection {
+export interface OurStrengthSectionProps {
     title: string;
     cards: {
         title: string;
@@ -63,7 +63,7 @@ export interface IOurStrengthSection {
     }[];
 }
 
-export interface IFaqSection {
+export interface FaqSectionProps {
     title: string;
     subtitleFuel: string;
     qaFuel: {
@@ -87,12 +87,12 @@ export interface IFaqSection {
     }[];
 }
 
-export interface IPartnerSection {
+export interface PartnerSectionProps {
     title: string;
     titleDes: string;
 }
 
-export interface IFooterSection {
+export interface FooterProps {
     title: string;
     office: string;
     phone: string;
@@ -103,14 +103,14 @@ export interface IFooterSection {
 }
 
 export default interface HomeProps {
-    NavgationBar: INavgationBar;
-    HeroSection: IHeroSection;
-    AboutUsSection: IAboutUsSection;
-    SolutionSection: ISolutionSection;
-    CostEffectivenessSection: ICostEffectivenessSection;
-    PracticalCaseSection: IPracticalCaseSection;
-    OurStrengthSection: IOurStrengthSection;
-    FaqSection: IFaqSection;
-    PartnerSection: IPartnerSection;
-    FooterSection: IFooterSection;
+    navbar: NavbarProps;
+    heroSection: HeroSectionProps;
+    aboutUsSection: AboutUsSectionProps;
+    solutionSection: SolutionSectionProps;
+    costEffectivenessSection: CostEffectivenessSectionProps;
+    practicalCaseSection: PracticalCaseSectionProps;
+    ourStrengthSection: OurStrengthSectionProps;
+    faqSection: FaqSectionProps;
+    partnerSection: PartnerSectionProps;
+    footer: FooterProps;
 } 

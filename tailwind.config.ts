@@ -65,10 +65,16 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "ball-scale-multiple": {
+          '0%': { opacity: 0, transform: 'scale(0)' },
+          '5%': { opacity: 0.75 },
+          '100%': { opacity: 0, transform: 'scale(1)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "ball-scale-multiple": "ball-scale-multiple 1s 0s linear infinite"
       },
     },
   },
