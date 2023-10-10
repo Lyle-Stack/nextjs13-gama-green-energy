@@ -5,19 +5,16 @@ const enContext: HomeProps = {
         lang: 'En',
         pages: [{
             name: "About Us",
-            pathName: "#aboutUs"
+            pathName: "/en/#aboutUs"
         }, {
             name: "Total Solution",
-            pathName: "#solution"
+            pathName: "/en/solution"
         }, {
             name: "Case Study",
-            pathName: "#showcase"
-        }, {
-            name: "Our advantage",
-            pathName: "#strength"
+            pathName: "/en/showcase"
         }, {
             name: "Q&A",
-            pathName: "#faq"
+            pathName: "/en/faq"
         }, {
             name: "Contact Us",
             pathName: "#contactUs"

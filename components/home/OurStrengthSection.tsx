@@ -39,7 +39,7 @@ const OurStrengthSection = ({ title, cards }: OurStrengthSectionProps) => {
               </div>
               <div className="px-6 pb-8 pt-6 sm:pb-12">
                 <Image src={icon} alt={`icon ${title}`} />
-                <h2 className="my-5 text-white">{title}</h2>
+                <h5 className="my-5 text-white">{title}</h5>
                 <p className="body1 text-white">{titleDes}</p>
               </div>
             </div>

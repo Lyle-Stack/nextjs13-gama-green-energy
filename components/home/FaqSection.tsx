@@ -72,14 +72,12 @@ const FaqSection = ({
                     : "bg-[#2DA351]"
                 }`}
               >
-                {title.split("").map((c, i) => (
-                  <p
-                    key={`qa-title-${i}`}
-                    className="subtitle1 leading-tight text-white"
-                  >
-                    {c}
-                  </p>
-                ))}
+                <p
+                  key={`qa-title-${i}`}
+                  className="subtitle1 py-2 leading-tight text-white [writing-mode:vertical-lr]"
+                >
+                  {title}
+                </p>
               </div>
             </div>
             <Accordion

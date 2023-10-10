@@ -5,19 +5,16 @@ const zhContext: HomeProps = {
         lang: '中文',
         pages: [{
             name: '關於我們',
-            pathName: '#aboutUs'
+            pathName: "/#aboutUs"
         }, {
             name: '解決方案',
-            pathName: '#solution'
+            pathName: '/solution'
         }, {
             name: '案例實績',
-            pathName: '#showcase'
-        }, {
-            name: '我們的優勢',
-            pathName: '#strength'
+            pathName: '/showcase'
         }, {
             name: '相關問答',
-            pathName: '#faq'
+            pathName: '/faq'
         }, {
             name: '聯絡我們',
             pathName: '#contactUs'

@@ -103,7 +103,7 @@ const PracticalCaseSection = ({
             />
             <PicHoverEffect title={picGridSubtitle[4]} />
           </div>
-          <div className="relative col-start-2 row-start-1 aspect-[464/368] w-full">
+          <div className="relative col-start-2 row-start-1 aspect-[464/368] w-full bg-[#C8E5E9]">
             <Image
               src="/images/device-1.jpg"
               alt={picGridSubtitle[1]}

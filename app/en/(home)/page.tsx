@@ -3,17 +3,17 @@ import CostEffectivenessSection from "@/components/home/CostEffectivenessSection
 import HeroSection from "@/components/home/HeroSection";
 import OurStrengthSection from "@/components/home/OurStrengthSection";
 import PartnerSection from "@/components/home/PartnerSection";
-import zhContext from "@/constants/texts/zh";
+import enContext from "@/constants/texts/en";
 import React from "react";
 
 const Home = () => {
   return (
     <main>
-      <HeroSection {...zhContext.heroSection} />
-      <AboutUsSection {...zhContext.aboutUsSection} />
-      <CostEffectivenessSection {...zhContext.costEffectivenessSection} />
-      <OurStrengthSection {...zhContext.ourStrengthSection} />
-      <PartnerSection {...zhContext.partnerSection} />
+      <HeroSection {...enContext.heroSection} />
+      <AboutUsSection {...enContext.aboutUsSection} />
+      <CostEffectivenessSection {...enContext.costEffectivenessSection} />
+      <OurStrengthSection {...enContext.ourStrengthSection} />
+      <PartnerSection {...enContext.partnerSection} />
     </main>
   );
 };
