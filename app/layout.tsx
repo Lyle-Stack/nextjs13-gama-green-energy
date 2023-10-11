@@ -1,8 +1,15 @@
 import React from "react";
+import dynamic from "next/dynamic";
 import "./globals.css";
 import type { Metadata } from "next";
 // eslint-disable-next-line camelcase
 import { Inter, Noto_Sans_TC } from "next/font/google";
+const OnScrollTrigger = dynamic(
+  () => import("@/components/shared/OnScrollTrigger"),
+  {
+    ssr: false,
+  }
+);
 
 const notoSansTC = Noto_Sans_TC({
   subsets: ["latin"],
@@ -78,6 +85,8 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${notoSansTC.className} text-primary`}
       >
+        <div id="back-to-top-anchor"></div>
+        <OnScrollTrigger />
         {children}
       </body>
     </html>

@@ -5,7 +5,7 @@ import React from "react";
 const HeroSection = ({ title, subtitle }: HeroSectionProps) => {
   return (
     // TODO: data-aos="fade-up"
-    <section id="back-to-top-anchor" className="relative mb-12">
+    <section className="relative mb-12">
       <div className="section-p-mx-max flex h-[500px] flex-row items-center justify-start sm:h-[560px] md:h-[640px] lg:md:h-[720px] xl:md:h-[800px]">
         {/*  TODO: data-aos="fade-up" data-aos-mirror='true' data-aos-delay="200" */}
         <hgroup className="text-white">
