@@ -18,11 +18,11 @@ const CostEffectivenessSection = ({
       className="relative mx-auto mb-12 w-full max-w-screen-2xl sm:mb-24 md:mb-36 lg:mb-48"
     >
       {/* TODO: data-aos="fade-up" */}
-      <div className="section-p w-full sm:w-10/12 md:w-8/12">
+      <div className="section-p w-full pt-0 sm:w-10/12 md:w-8/12">
         <h2 className="mb-5 text-secondary">{title}</h2>
         <p className="subtitle2">{titleDes}</p>
       </div>
-      <div className="">
+      <div className="section-p-mx-max">
         {[
           {
             kw: "400 kW",
@@ -41,9 +41,9 @@ const CostEffectivenessSection = ({
             key={`top-${ind}`}
             className="mb-[60px] grid grid-cols-12 gap-y-5"
           >
-            <h5 className="col-span-12 text-center text-secondary">
+            <h3 className="col-span-12 text-center text-secondary">
               {stage[ind]}
-            </h5>
+            </h3>
             {[
               { h2: kw, p: listDescription[0], icon: IconFire },
               { h2: gwh, p: listDescription[1], icon: IconSupperPowers },

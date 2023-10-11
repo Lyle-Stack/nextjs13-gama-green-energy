@@ -43,14 +43,14 @@ const SolutionSection = ({
           </div>
           <div className="z-0 col-span-10 col-start-2 mx-auto flex flex-col items-center justify-center sm:col-span-4 sm:col-start-8 sm:items-start">
             <h2 className="mb-5 text-accent">{title}</h2>
-            <h5 className="text-white">{titleDes}</h5>
+            <h3 className="text-white">{titleDes}</h3>
           </div>
         </div>
       </div>
 
       {/* TODO: data-aos="fade-up" */}
       <div className="section-p-mx-max relative">
-        <h5 className="mb-5 block text-secondary">{subtitleFirst}</h5>
+        <h3 className="mb-5 block text-secondary">{subtitleFirst}</h3>
         <div className="relative grid grid-cols-12 justify-end">
           {contentFirst.map((c, i) => (
             <React.Fragment key={c}>
@@ -76,11 +76,11 @@ const SolutionSection = ({
       </div>
 
       <div className="section-p-mx-max section-p mb-20">
-        <h5 className="mb-5 text-secondary">
+        <h3 className="mb-5 text-secondary">
           {subtitleSecond[0]}
           <br />
           {subtitleSecond[1]}
-        </h5>
+        </h3>
         <p className="subtitle2">
           {contentSecond[0]}
           <br />
@@ -115,7 +115,7 @@ const SolutionSection = ({
       <div className="relative mb-20 w-full bg-neutral-100 py-[60px]">
         <div className="absolute right-0 top-0 -z-0 hidden h-full w-1/3 bg-white sm:block"></div>
         <div className="section-p-mx-max mb-20 flex flex-col sm:flex-row-reverse">
-          <h5 className="mb-5 text-secondary sm:hidden">{subtitleThird}</h5>
+          <h3 className="mb-5 text-secondary sm:hidden">{subtitleThird}</h3>
           <div className="relative aspect-[461/260] w-full sm:ml-auto sm:w-5/12">
             <Image
               src="/images/aurelia_device_A400.png"
@@ -126,9 +126,9 @@ const SolutionSection = ({
             />
           </div>
           <div className="relative w-full sm:w-1/2">
-            <h5 className="mb-5 hidden text-secondary sm:inline-block">
+            <h3 className="mb-5 hidden text-secondary sm:inline-block">
               {subtitleThird}
-            </h5>
+            </h3>
             <p className="subtitle2">
               {contentThird[0]}
               <br />

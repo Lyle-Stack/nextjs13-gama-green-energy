@@ -5,9 +5,9 @@ import YouTubeComp from "../shared/YouTubeComp";
 
 const PicHoverEffect = ({ title }: { title: string }) => (
   <div className="group absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-transparent transition-colors duration-300 hover:bg-black/70">
-    <h5 className="relative translate-y-full px-6 py-2.5 text-accent opacity-0 transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 after:border-b after:border-[#51FE28] after:transition-transform after:delay-75 after:duration-300 after:ease-linear group-hover:translate-y-0 group-hover:opacity-100 group-hover:after:scale-100">
+    <h3 className="relative translate-y-full px-6 py-2.5 text-accent opacity-0 transition-all duration-300 ease-linear after:absolute after:bottom-0 after:left-0 after:w-full after:scale-x-0 after:border-b after:border-[#51FE28] after:transition-transform after:delay-75 after:duration-300 after:ease-linear group-hover:translate-y-0 group-hover:opacity-100 group-hover:after:scale-100">
       {title}
-    </h5>
+    </h3>
   </div>
 );
 
@@ -41,8 +41,8 @@ const PracticalCaseSection = ({
           <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-t from-black/70 to-black/70"></div>
           <div className="z-0 col-span-10 col-start-2 mx-auto flex flex-col items-center justify-center gap-2.5 sm:col-span-8 sm:col-start-3 md:col-span-6 md:col-start-4">
             <h2 className="text-accent">{title}</h2>
-            <h5 className="text-white">{subtitleFirst}</h5>
-            <h5 className="subtitle2 text-white">{contentFirst}</h5>
+            <h3 className="text-white">{subtitleFirst}</h3>
+            <h3 className="subtitle2 text-white">{contentFirst}</h3>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ const PracticalCaseSection = ({
 
       <div className="section-p-mx-max mb-20 bg-neutral-100 py-20">
         <div className="flex flex-col sm:flex-row sm:items-center">
-          <h5 className="mb-5 text-secondary sm:hidden">{subtitleSecond}</h5>
+          <h3 className="mb-5 text-secondary sm:hidden">{subtitleSecond}</h3>
           <div className="relative mb-5 aspect-[461/260] w-full sm:w-5/12">
             <Image
               src="/images/gama_3d.jpg"
@@ -66,9 +66,9 @@ const PracticalCaseSection = ({
             />
           </div>
           <div className="relative w-full sm:ml-auto sm:w-1/2">
-            <h5 className="mb-5 hidden text-secondary sm:block">
+            <h3 className="mb-5 hidden text-secondary sm:block">
               {subtitleSecond}
-            </h5>
+            </h3>
             <p className="subtitle2">
               {contentSecond[0]}
               <br />
@@ -81,7 +81,7 @@ const PracticalCaseSection = ({
 
       <div className="section-p-mx-max section-p relative">
         <h2 className="mb-5 text-secondary">{subtitleThird}</h2>
-        <h5 className="mb-10">{contentThird}</h5>
+        <h3 className="mb-10">{contentThird}</h3>
         <div className="grid w-full grid-cols-2 gap-6 md:grid-cols-3">
           <div className="relative col-start-1 row-span-2 row-start-1 h-full w-full">
             <Image
@@ -103,7 +103,7 @@ const PracticalCaseSection = ({
             />
             <PicHoverEffect title={picGridSubtitle[4]} />
           </div>
-          <div className="relative col-start-2 row-start-1 aspect-[464/368] w-full">
+          <div className="relative col-start-2 row-start-1 aspect-[464/368] w-full bg-[#C8E5E9]">
             <Image
               src="/images/device-1.jpg"
               alt={picGridSubtitle[1]}

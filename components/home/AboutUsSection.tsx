@@ -32,7 +32,7 @@ const AboutUsSection = ({
                   />
                 </div>
                 <div className="absolute left-0 top-0 -z-10 h-full w-full bg-gradient-to-t from-black/60 to-black/60"></div>
-                <h5 className="mb-5 text-accent">{imgPart.title}</h5>
+                <h3 className="mb-5 text-accent">{imgPart.title}</h3>
                 <p className="body1 text-white">{imgPart.description}</p>
               </div>
             ))}
@@ -43,11 +43,11 @@ const AboutUsSection = ({
             <p className="subtitle2 mb-8 sm:mb-[60px]">
               {descriptionPart.titileDes}
             </p>
-            <h5 className="mb-5 text-secondary">
+            <h3 className="mb-5 text-secondary">
               {descriptionPart.subtitleFirstLine}
               <br />
               {descriptionPart.subtitleSecondLine}
-            </h5>
+            </h3>
             <p className="subtitle2">
               {descriptionPart.contentFirstPara} <br />
               <br />
