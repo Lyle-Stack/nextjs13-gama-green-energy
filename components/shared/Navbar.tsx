@@ -9,11 +9,20 @@ import MobileLinks from "@/components/navbar/MobileLinks";
 
 const Navbar = ({ lang, pages }: NavbarProps) => {
   return (
-    <nav className="sticky bg-white shadow-md">
+    <nav
+      id="navbar-OnScrollTrigger"
+      aria-hidden="false"
+      className="sticky top-0 z-40 translate-y-0 bg-white shadow-md transition-transform duration-500 aria-hidden:-translate-y-full"
+    >
       <div className="section-p-mx-max flex flex-row items-center justify-between">
-        <div className="flex flex-row flex-nowrap items-center">
+        <a
+          className="flex flex-row flex-nowrap items-center"
+          href={lang === "En" ? "/en" : "/"}
+          aria-label="home link"
+          role="button"
+        >
           <Image src={GamaLogo} alt="Gama Logo" />
-        </div>
+        </a>
         <div className="flex flex-row flex-nowrap items-center gap-4">
           <div className="hidden flex-row flex-nowrap items-center lg:flex">
             {pages.map((page) => (

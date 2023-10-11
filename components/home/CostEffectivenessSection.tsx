@@ -18,7 +18,7 @@ const CostEffectivenessSection = ({
       className="relative mx-auto mb-12 w-full max-w-screen-2xl sm:mb-24 md:mb-36 lg:mb-48"
     >
       {/* TODO: data-aos="fade-up" */}
-      <div className="section-p w-full sm:w-10/12 md:w-8/12">
+      <div className="section-p w-full pt-0 sm:w-10/12 md:w-8/12">
         <h2 className="mb-5 text-secondary">{title}</h2>
         <p className="subtitle2">{titleDes}</p>
       </div>
