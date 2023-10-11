@@ -9,38 +9,22 @@ import MobileLinks from "@/components/navbar/MobileLinks";
 
 const Navbar = ({ lang, pages }: NavbarProps) => {
   return (
-    <nav
-      aria-hidden="false"
-      id="navbar-OnScrollTrigger"
-      className="sticky top-0 z-40 translate-y-0 bg-white shadow-md transition-transform duration-500 aria-hidden:-translate-y-full"
-    >
+    <nav className="sticky bg-white shadow-md">
       <div className="section-p-mx-max flex flex-row items-center justify-between">
         <div className="flex flex-row flex-nowrap items-center">
           <Image src={GamaLogo} alt="Gama Logo" />
         </div>
         <div className="flex flex-row flex-nowrap items-center gap-4">
           <div className="hidden flex-row flex-nowrap items-center lg:flex">
-            {pages.map((page, ind, arr) => {
-              if (ind + 1 !== arr.length)
-                return (
-                  <Link
-                    href={page.pathName}
-                    key={page.pathName}
-                    className="text-btn block p-2 text-base font-bold transition-all duration-300 hover:bg-[#07451A] hover:text-white"
-                  >
-                    {page.name}
-                  </Link>
-                );
-              return (
-                <a
-                  href={page.pathName}
-                  key={page.pathName}
-                  className="text-btn block p-2 text-base font-bold transition-all duration-300 hover:bg-[#07451A] hover:text-white"
-                >
-                  {page.name}
-                </a>
-              );
-            })}
+            {pages.map((page) => (
+              <Link
+                href={page.pathName}
+                key={page.pathName}
+                className="text-btn block p-2 text-base font-bold transition-all duration-300 hover:bg-[#07451A] hover:text-white"
+              >
+                {page.name}
+              </Link>
+            ))}
           </div>
           <Link href={lang === "En" ? "/" : "/en"} className="py-2">
             {lang === "En" ? (
@@ -54,6 +38,8 @@ const Navbar = ({ lang, pages }: NavbarProps) => {
           </div>
         </div>
       </div>
+
+      {/* TODO: ToTopButton */}
     </nav>
   );
 };

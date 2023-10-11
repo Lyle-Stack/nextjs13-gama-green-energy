@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import qaBg from "@/public/images/qa_bg.jpg";
 
 const FaqSection = ({
   title,
@@ -29,7 +30,7 @@ const FaqSection = ({
         <div className="section-p-mx-max section-p relative mb-[60px] grid grid-cols-12">
           <div className="absolute left-0 top-0 -z-0 h-full w-full overflow-hidden">
             <Image
-              src="/images/qa_bg.jpg"
+              src={qaBg}
               alt=""
               fill={true}
               className="object-cover"
@@ -72,12 +73,14 @@ const FaqSection = ({
                     : "bg-[#2DA351]"
                 }`}
               >
-                <p
-                  key={`qa-title-${i}`}
-                  className="subtitle1 py-2 leading-tight text-white [writing-mode:vertical-lr]"
-                >
-                  {title}
-                </p>
+                {title.split("").map((c, i) => (
+                  <p
+                    key={`qa-title-${i}`}
+                    className="subtitle1 leading-tight text-white"
+                  >
+                    {c}
+                  </p>
+                ))}
               </div>
             </div>
             <Accordion

@@ -3,6 +3,9 @@ import Image from "next/image";
 import React from "react";
 import YouTubeComp from "../shared/YouTubeComp";
 import GamaWatermark from "@/public/icons/gama_watermark.svg";
+import aboutUs1 from "@/public/images/about_us_1.jpg";
+import aboutUs2 from "@/public/images/about_us_2.jpg";
+import aboutUs3 from "@/public/images/about_us_3.jpg";
 
 const AboutUsSection = ({
   imagePart,
@@ -17,14 +20,14 @@ const AboutUsSection = ({
       <div className="section-p-mx-max flex flex-row items-center justify-center">
         <div className="grid grid-cols-12 gap-0 sm:gap-12">
           <div className="col-span-12 flex sm:col-span-4 sm:inline-block md:col-span-4">
-            {imagePart.map((imgPart, index) => (
+            {imagePart.map((imgPart, ind) => (
               <div
                 key={imgPart.title}
                 className="relative mb-20 flex w-full flex-col items-center justify-center px-4 py-5 sm:mb-0 sm:px-8 sm:py-7 md:px-10 md:py-8 lg:px-14 lg:py-10 xl:px-[72px] xl:py-5"
               >
                 <div className="absolute left-0 top-0 -z-20 h-full w-full">
                   <Image
-                    src={`/images/about_us_${index + 1}.jpg`}
+                    src={ind === 0 ? aboutUs1 : ind === 1 ? aboutUs2 : aboutUs3}
                     alt=""
                     fill={true}
                     className="bg-gradient-to-t from-black/60 to-black/60 object-cover"
@@ -32,7 +35,7 @@ const AboutUsSection = ({
                   />
                 </div>
                 <div className="absolute left-0 top-0 -z-10 h-full w-full bg-gradient-to-t from-black/60 to-black/60"></div>
-                <h5 className="mb-5 text-accent">{imgPart.title}</h5>
+                <h3 className="mb-5 text-accent">{imgPart.title}</h3>
                 <p className="body1 text-white">{imgPart.description}</p>
               </div>
             ))}
@@ -43,11 +46,11 @@ const AboutUsSection = ({
             <p className="subtitle2 mb-8 sm:mb-[60px]">
               {descriptionPart.titileDes}
             </p>
-            <h5 className="mb-5 text-secondary">
+            <h3 className="mb-5 text-secondary">
               {descriptionPart.subtitleFirstLine}
               <br />
               {descriptionPart.subtitleSecondLine}
-            </h5>
+            </h3>
             <p className="subtitle2">
               {descriptionPart.contentFirstPara} <br />
               <br />

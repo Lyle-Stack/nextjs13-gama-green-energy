@@ -8,64 +8,74 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import logoOpeaTurbines from "@/public/images/logo-OPRA-Turbines.jpg";
+import logoGreenEarthEco from "@/public/images/logo-green-earth-eco.jpg";
+import logoSunshenAm from "@/public/images/logo-sunshen-am.png";
+import logoAurelia from "@/public/images/logo-aurelia.png";
+import logoSunsing from "@/public/images/logo-sunghsing.png";
+import logoGreenProsperity from "@/public/images/logo-green-prosperity.png";
+import logoAdicomp from "@/public/images/logo-adicomp.png";
+import logoSunforce from "@/public/images/logo-sunforce.png";
+import logoDPCleanTech from "@/public/images/logo-DPCleanTech.png";
+import logoAirmenEnergy from "@/public/images/logo-airmen-energy.jpg";
 
 const partnerList = [
   {
-    imgPath: "/images/logo-OPRA-Turbines.jpg",
+    imgPath: logoOpeaTurbines,
     alt: "OPRA Turbines - An Airem Energy Company",
     twAspectClass: "aspect-[1.8]",
     link: "https://www.opra.energy/zh/",
   },
   {
-    imgPath: "/images/logo-green-earth-eco.jpg",
+    imgPath: logoGreenEarthEco,
     alt: "綠美地環保資源 - Green Earth Eco",
     twAspectClass: "aspect-[1.3]",
     link: "https://www.104.com.tw/company/1a2x6bkweb",
   },
   {
-    imgPath: "/images/logo-sunshen-am.png",
+    imgPath: logoSunshenAm,
     alt: "三生農機- San-Shen Agricultural Machinery",
     twAspectClass: "aspect-[1]",
     link: "http://www.sanshen-am.com.tw/zh-tw",
   },
   {
-    imgPath: "/images/logo-aurelia.png",
+    imgPath: logoAurelia,
     alt: "Aurelia - Aurelia Turbines Oy",
     twAspectClass: "aspect-[1]",
     link: "https://aureliaturbines.com/",
   },
   {
-    imgPath: "/images/logo-sunghsing.png    ",
+    imgPath: logoSunsing,
     alt: "頌欣機械 - Sung-Hsing Enterprise",
     twAspectClass: "aspect-[2.6]",
     link: "https://www.hocom.tw/h/index?key=8277077768",
   },
   {
-    imgPath: "/images/logo-green-prosperity.png",
+    imgPath: logoGreenProsperity,
     alt: "金茂榮環境工程 - Green Prosperity Eco-Awareness",
     twAspectClass: "aspect-[3]",
     link: "https://www.greenprosperity.com.tw/",
   },
   {
-    imgPath: "/images/logo-adicomp.png",
+    imgPath: logoAdicomp,
     alt: "Adicomp S.r.l. - Advanced air and gas solutions",
     twAspectClass: "aspect-[2.1]",
     link: "https://www.adicomp.com/",
   },
   {
-    imgPath: "/images/logo-sunforce.png",
+    imgPath: logoSunforce,
     alt: "晟福科技 - Sunforce Technologies",
     twAspectClass: "aspect-[2.8]",
     link: "https://www.sunforce.com.tw/",
   },
   {
-    imgPath: "/images/logo-DPCleanTech.png",
+    imgPath: logoDPCleanTech,
     alt: "DPClean Tech",
     twAspectClass: "aspect-[2.9]",
     link: "https://www.dpcleantech.com/",
   },
   {
-    imgPath: "/images/logo-airmen-energy.jpg",
+    imgPath: logoAirmenEnergy,
     alt: "Airem Energy - Driving the World’s Energy Transition",
     twAspectClass: "aspect-[4]",
     link: "https://airemenergy.com/",

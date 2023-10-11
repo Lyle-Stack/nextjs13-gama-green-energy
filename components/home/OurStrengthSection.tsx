@@ -4,6 +4,9 @@ import { OurStrengthSectionProps } from "@/types";
 import IconIdea from "@/public/icons/icon-idea.svg";
 import IconIdcard from "@/public/icons/icon-id_card.svg";
 import IconFileText from "@/public/icons/icon-file_text_filled.svg";
+import advantage01 from "@/public/images/advantage-01.jpg";
+import advantage02 from "@/public/images/advantage-02.jpg";
+import advantage03 from "@/public/images/advantage-03.jpg";
 
 const OurStrengthSection = ({ title, cards }: OurStrengthSectionProps) => {
   return (
@@ -19,10 +22,10 @@ const OurStrengthSection = ({ title, cards }: OurStrengthSectionProps) => {
             ...card,
             imgPath:
               index === 0
-                ? "/images/advantage-01.jpg"
+                ? advantage01
                 : index === 1
-                ? "/images/advantage-02.jpg"
-                : "/images/advantage-03.jpg",
+                ? advantage02
+                : advantage03,
             icon:
               index === 0 ? IconIdea : index === 1 ? IconIdcard : IconFileText,
           }))
@@ -31,7 +34,7 @@ const OurStrengthSection = ({ title, cards }: OurStrengthSectionProps) => {
               <div className="relative h-[230px]">
                 <Image
                   src={imgPath}
-                  alt={imgPath}
+                  alt={imgPath.src}
                   fill={true}
                   className="object-cover"
                   sizes="(max-width: 600px) 100vw, 30vw"
@@ -39,7 +42,7 @@ const OurStrengthSection = ({ title, cards }: OurStrengthSectionProps) => {
               </div>
               <div className="px-6 pb-8 pt-6 sm:pb-12">
                 <Image src={icon} alt={`icon ${title}`} />
-                <h5 className="my-5 text-white">{title}</h5>
+                <h2 className="my-5 text-white">{title}</h2>
                 <p className="body1 text-white">{titleDes}</p>
               </div>
             </div>

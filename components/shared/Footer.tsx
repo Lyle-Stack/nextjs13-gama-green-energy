@@ -7,6 +7,7 @@ import WatchLaterIcon from "@/public/icons/Mui_WatchLater.svg";
 import IconFax from "@/public/icons/icon-fax.svg";
 import IconMapLocation from "@/public/icons/icon-map_location_dot.svg";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import footerMap from "@/public/images/footer-map.png";
 
 const PartnerSection = ({
   title,
@@ -22,7 +23,7 @@ const PartnerSection = ({
       <div className="relative block overflow-hidden">
         <div className="absolute left-0 top-0 -z-0 h-full w-full">
           <Image
-            src="/images/footer-map.png"
+            src={footerMap}
             alt=""
             fill={true}
             className="object-cover"

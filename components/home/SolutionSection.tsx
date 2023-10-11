@@ -3,6 +3,10 @@ import Image from "next/image";
 import React from "react";
 import YouTubeComp from "../shared/YouTubeComp";
 import GamaWatermark from "@/public/icons/gama_watermark.svg";
+import solutionBg from "@/public/images/solution_bg.jpg";
+import solutionTitle from "@/public/images/solution_title.jpg";
+import service02 from "@/public/images/service-02.jpg";
+import aureliaDeviceA400 from "@/public/images/aurelia_device_A400.png";
 
 const SolutionSection = ({
   title,
@@ -24,7 +28,7 @@ const SolutionSection = ({
         <div className="section-p-mx-max section-p relative mb-[60px] grid grid-cols-12">
           <div className="absolute left-0 top-0 -z-0 h-full w-full overflow-hidden">
             <Image
-              src="/images/solution_bg.jpg"
+              src={solutionBg}
               alt=""
               fill={true}
               className="object-cover"
@@ -34,7 +38,7 @@ const SolutionSection = ({
           <div className="absolute left-0 top-0 -z-0 h-full w-full bg-gradient-to-t from-black/70 to-black/70"></div>
           <div className="relative z-0 col-span-5 col-start-2 hidden aspect-[4/3] sm:inline-block">
             <Image
-              src="/images/solution_title.jpg"
+              src={solutionTitle}
               alt=""
               fill={true}
               className="object-cover"
@@ -43,14 +47,14 @@ const SolutionSection = ({
           </div>
           <div className="z-0 col-span-10 col-start-2 mx-auto flex flex-col items-center justify-center sm:col-span-4 sm:col-start-8 sm:items-start">
             <h2 className="mb-5 text-accent">{title}</h2>
-            <h5 className="text-white">{titleDes}</h5>
+            <h3 className="text-white">{titleDes}</h3>
           </div>
         </div>
       </div>
 
       {/* TODO: data-aos="fade-up" */}
       <div className="section-p-mx-max relative">
-        <h5 className="mb-5 block text-secondary">{subtitleFirst}</h5>
+        <h3 className="mb-5 block text-secondary">{subtitleFirst}</h3>
         <div className="relative grid grid-cols-12 justify-end">
           {contentFirst.map((c, i) => (
             <React.Fragment key={c}>
@@ -76,11 +80,11 @@ const SolutionSection = ({
       </div>
 
       <div className="section-p-mx-max section-p mb-20">
-        <h5 className="mb-5 text-secondary">
+        <h3 className="mb-5 text-secondary">
           {subtitleSecond[0]}
           <br />
           {subtitleSecond[1]}
-        </h5>
+        </h3>
         <p className="subtitle2">
           {contentSecond[0]}
           <br />
@@ -98,7 +102,7 @@ const SolutionSection = ({
         <div className="section-p-mx-max z-0 flex flex-col items-center sm:flex-row-reverse">
           <div className="relative aspect-[800/522] w-full sm:w-1/2">
             <Image
-              src="/images/service-02.jpg"
+              src={service02}
               alt="去中心化"
               fill={true}
               className="object-contain"
@@ -115,10 +119,10 @@ const SolutionSection = ({
       <div className="relative mb-20 w-full bg-neutral-100 py-[60px]">
         <div className="absolute right-0 top-0 -z-0 hidden h-full w-1/3 bg-white sm:block"></div>
         <div className="section-p-mx-max mb-20 flex flex-col sm:flex-row-reverse">
-          <h5 className="mb-5 text-secondary sm:hidden">{subtitleThird}</h5>
+          <h3 className="mb-5 text-secondary sm:hidden">{subtitleThird}</h3>
           <div className="relative aspect-[461/260] w-full sm:ml-auto sm:w-5/12">
             <Image
-              src="/images/aurelia_device_A400.png"
+              src={aureliaDeviceA400}
               alt="Aurelia A400"
               fill={true}
               className="object-contain"
@@ -126,9 +130,9 @@ const SolutionSection = ({
             />
           </div>
           <div className="relative w-full sm:w-1/2">
-            <h5 className="mb-5 hidden text-secondary sm:inline-block">
+            <h3 className="mb-5 hidden text-secondary sm:inline-block">
               {subtitleThird}
-            </h5>
+            </h3>
             <p className="subtitle2">
               {contentThird[0]}
               <br />
